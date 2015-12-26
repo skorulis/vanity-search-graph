@@ -56,7 +56,6 @@ function drawMainGraph() {
 		
 		y.domain(yExtant)
 		x.domain(xExtant)
-		
 		svg.append("g")
 			.attr("class", "x axis")
 			.attr("transform", "translate(0," + height + ")")
@@ -68,7 +67,6 @@ function drawMainGraph() {
 		
 		for (var key in data) {
 			var color = colors[key]
-			console.log(color)
 		
 			var counts = data[key]
 			svg.append("path")
@@ -76,7 +74,7 @@ function drawMainGraph() {
       .attr("class", "line")
       .attr("d", line)
       .style({
-      	stroke:color
+      	stroke:color,
       })
       
       svg.append("text")
