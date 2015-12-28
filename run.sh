@@ -9,6 +9,6 @@ do
 	sleep 2s
 done
 
-DATE = `date`
+DATESTRING=`date`
 
-git commit -a -m "Update $DATE"
+git commit -a -m "Update $DATESTRING"
