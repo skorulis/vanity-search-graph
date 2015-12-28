@@ -8,3 +8,7 @@ do
 	ruby check_results.rb "$FIRST" "$i"
 	sleep 2s
 done
+
+DATE = `date`
+
+git commit -a -m "Update $DATE"
