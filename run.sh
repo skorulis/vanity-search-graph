@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ruby updateResults.rb
+ruby updateGraph.rb
 
 DATESTRING=`date`
 
